@@ -1,5 +1,5 @@
 #### OpenSense Dashboard 
-![Icon]('.\assets\icon.png')
+![Icon]("/assets/icon.png")
 
 Orginal github project 
 https://github.com/furnya/OpenSense-Dashboard-Project
