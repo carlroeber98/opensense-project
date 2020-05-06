@@ -2,7 +2,7 @@
 Orginal github project 
 https://github.com/furnya/OpenSense-Dashboard-Project
 
-![Icon](./⁨OpenSenseDashboard/war/icon.png)
+![Icon](icon.png)
 
 Anleitung mit AWS Server verbinden:
 
