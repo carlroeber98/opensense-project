@@ -1,8 +1,8 @@
-#### OpenSense Dashboard
+#### OpenSense Dashboard 
+![Icon]('.\assets\icon.png')
+
 Orginal github project 
 https://github.com/furnya/OpenSense-Dashboard-Project
-
-![Icon](icon.png)
 
 Anleitung mit AWS Server verbinden:
 
