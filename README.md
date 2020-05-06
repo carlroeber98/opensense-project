@@ -44,9 +44,11 @@ Das Projekt läuft mit Java 8 und funktioniert am besten mit der jdk1.8.0_191 (G
 ![List page](assets/lists.PNG)
 ![Map page](assets/map.PNG)
 ![Search page](assets/search.PNG)
-![Visualization page](⁨assets/vis.PNG)
+![Visualization page](assets/vis.PNG)
 
-![Demo video](⁨assets/DashboardVideo.mp4)
+<video width="320" height="240" controls>
+  <source src="assets/demo.mp4" type="video/mp4">
+</video>
 
 
 
