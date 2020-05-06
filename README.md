@@ -1,5 +1,5 @@
 #### OpenSense Dashboard 
-![Icon]("/assets/icon.png")
+![Icon](assets/icon.png)
 
 Orginal github project 
 https://github.com/furnya/OpenSense-Dashboard-Project
@@ -32,21 +32,21 @@ Anleitung Eclipse Projekt einrichten und starten:
 8.	Projekt unter dem Link aufrufen http://127.0.0.1:8888/OpenSenseDashboard.html
 Das Projekt läuft mit Java 8 und funktioniert am besten mit der jdk1.8.0_191 (GWT ist sehr wählerisch mit den Versionen, gut möglich, dass es mit einer neueren Version nicht funktioniert). Wir haben uns beim Server sowie bei der SQL-Datenbank nicht besonders mit dem Thema der Sicherheit auseinandergesetzt (es gibt immer nur einen Nutzer, der alle Rechte besitzt).
 
-![Putty config](/⁨assets/puttyTunnels.png)
+![Putty config](assets/puttyTunnels.png)
 
-![Run config](/⁨assets/runconfig.png)
+![Run config](assets/runconfig.png)
 
-![Arguments](/⁨assets/arguments.png)
+![Arguments](assets/arguments.png)
 
 ### Demo Sceenshots und Video
 
-![Create a sensor](./⁨assets/createSensor.png)
-![List page](/⁨assets/lists.png)
-![Map page](/⁨assets/map.png)
-![Search page](/⁨assets/search.png)
-![Visualization page](/⁨assets/vis.png)
+![Create a sensor](assets/createSensor.png)
+![List page](assets/lists.png)
+![Map page](assets/map.png)
+![Search page](assets/search.png)
+![Visualization page](⁨assets/vis.png)
 
-![Demo video](/⁨assets/DashboardVideo.mp4)
+![Demo video](⁨assets/DashboardVideo.mp4)
 
 
 
