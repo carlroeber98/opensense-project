@@ -1,6 +1,8 @@
 #### OpenSense Dashboard
+Orginal github project 
+https://github.com/furnya/OpenSense-Dashboard-Project
 
-![Icon](/⁨OpenSenseDashboard/war/icon.png)
+![Icon](./⁨OpenSenseDashboard/war/icon.png)
 
 Anleitung mit AWS Server verbinden:
 
@@ -38,7 +40,7 @@ Das Projekt läuft mit Java 8 und funktioniert am besten mit der jdk1.8.0_191 (G
 
 ### Demo Sceenshots und Video
 
-![Create a sensor](/⁨assets/createSensor.png)
+![Create a sensor](./⁨assets/createSensor.png)
 ![List page](/⁨assets/lists.png)
 ![Map page](/⁨assets/map.png)
 ![Search page](/⁨assets/search.png)
