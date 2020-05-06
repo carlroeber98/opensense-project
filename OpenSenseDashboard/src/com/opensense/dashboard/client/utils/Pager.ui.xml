@@ -1,0 +1,83 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+	xmlns:bh="urn:import:org.gwtbootstrap3.client.ui.html" xmlns:m="urn:import:gwt.material.design.client.ui"> 	
+	
+	<ui:with type="com.opensense.dashboard.client.utils.Languages" field="lang" />
+	<ui:with type="com.opensense.dashboard.client.gui.GUIImageBundle" field="gui" />
+	
+	<ui:style>
+	.pager > button{
+		border-top-right-radius: 15px;
+	    border-top-left-radius: 15px;
+	    border-bottom-right-radius: 15px;
+	    border-bottom-left-radius: 15px;
+	    padding: unset;
+	}
+	.pager[size=small] > button{
+		width: 18px;
+	    height: 18px;
+	    margin-right: 5px;
+	    margin-bottom: 2px;
+	}
+	.pager[size=small] > span{
+		margin-right: 5px;
+    	font-size: 11px;
+	}
+	.pager[size=small] > button > img{
+   	 	margin-bottom: 19px;
+   	 	height: 14px;
+	}
+	.pager[size=medium] > button{
+		width: 24px;
+    	height: 24px;
+    	margin-right: 10px;
+        margin-bottom: 3px;
+	}
+	.pager[size=medium] > span{
+		margin-right: 10px;
+	}
+	.pager[size=medium] > button > img{
+	    margin-bottom: 13px;
+	    height: 19px;
+	}
+	.pager[size=large] > button{
+	    width: 30px;
+	    height: 30px;
+	    margin-right: 14px;
+	    margin-bottom: 7px
+	}
+	.pager[size=large] > span{
+	    margin-right: 15px;
+    	font-size: large
+	}
+	.pager[size=large] > button > img{
+	    margin-bottom: 7px;
+	    height: 25px
+	}
+	</ui:style>
+	
+	<bh:Div addStyleNames="{style.pager}">
+		<m:MaterialTooltip ui:field="backwardsTooltip" text="{lang.backwards}">
+			<m:MaterialButton enabled="false" ui:field="backwardsButton" addStyleNames="d-btn">
+				<m:MaterialImage url="{gui.backwards.getSafeUri.asString}"/>
+			</m:MaterialButton>
+		</m:MaterialTooltip>
+		<m:MaterialTooltip ui:field="backwardsStepTooltip" text="{lang.backwardsStepByStep}">
+			<m:MaterialButton enabled="false" ui:field="backwardsStepByStepButton" addStyleNames="d-btn">
+				<m:MaterialImage url="{gui.backwardsStepbyStep.getSafeUri.asString}" />
+			</m:MaterialButton>
+		</m:MaterialTooltip>
+		<bh:Span ui:field="pageNumber" text="0-0 of 0" title="{lang.pageConfiguration}" color="white"/>
+		<m:MaterialTooltip ui:field="forwardTooltip" text="{lang.forwardsStepByStep}">
+			<m:MaterialButton enabled="false" ui:field="forwardsStepByStepButton" addStyleNames="d-btn">
+				<m:MaterialImage url="{gui.forwardsStepByStep.getSafeUri.asString}" />
+			</m:MaterialButton>
+		</m:MaterialTooltip>
+		<m:MaterialTooltip ui:field="forwardStepTooltip" text="{lang.forwards}">
+			<m:MaterialButton enabled="false" ui:field="forwardsButton" addStyleNames="d-btn">
+				<m:MaterialImage url="{gui.forwards.getSafeUri.asString}" />
+			</m:MaterialButton>
+		</m:MaterialTooltip>
+	</bh:Div>	
+</ui:UiBinder> 

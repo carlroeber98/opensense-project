@@ -1,0 +1,87 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui"
+	xmlns:b="urn:import:org.gwtbootstrap3.client.ui"
+	xmlns:bh="urn:import:org.gwtbootstrap3.client.ui.html"
+	xmlns:m="urn:import:gwt.material.design.client.ui"
+	xmlns:d="urn:import:com.opensense.dashboard.client.utils">
+
+	<ui:with type="com.opensense.dashboard.client.utils.Languages"
+		field="lang" />
+	<ui:with
+		type="com.opensense.dashboard.client.gui.GUIImageBundle" field="gui" />
+
+	<ui:style>
+	.max> div > ul {
+   		 max-height: 200px!important;
+	}
+	.mapContainer{
+	    width: 70%;
+    	height: 300px;
+	}
+	.locContainer{
+		width: 100%;
+		height: 70%;
+	}
+	.locBoxContainer{
+		width: 40%;
+		padding: 10px;
+	}
+	.locBoxContainer > *{
+		width: 100%;
+	}
+	.modalHeader{ 
+		font-size: 200%;
+		text-transform: uppercase;
+	}
+	.center{
+		text-align: center;
+	}
+	.info-icon{
+	    position: absolute;
+	    left: 25%;
+	    margin-top: -20px;
+	}
+	</ui:style>
+
+	<m:MaterialModal ui:field="modal" type="FIXED_FOOTER" dismissible="true" inDuration="500" outDuration="800" height="80%" addStyleNames="modal">
+       <m:MaterialModalContent ui:field="content">
+           <m:MaterialLabel text="{lang.createSensor}" addStyleNames="{style.modalHeader}"/>
+           <m:MaterialListBox placeholder="{lang.measurand}" ui:field="measurandList" textColor="BLACK" addStyleNames="{style.max} round-corners" />
+           <m:MaterialListBox placeholder="{lang.unit}" ui:field="unitList" textColor="BLACK" addStyleNames="{style.max} round-corners" />
+           <m:MaterialListBox placeholder="{lang.license}" ui:field="licenseList" textColor="BLACK" addStyleNames="{style.max} round-corners" />
+           <bh:Div addStyleNames="flex ontainer}">
+	           <bh:Div addStyleNames="{style.locBoxContainer}">
+		   	   		<m:MaterialTextBox textColor="BLACK" ui:field="latitudeBox" label="{lang.latitude} *" />
+	           		<m:MaterialTextBox textColor="BLACK" ui:field="longitudeBox" label="{lang.longitude} *" />
+	           		<b:Input type="TEXT" ui:field="placeBox" placeholder="{lang.searchForPlace}" />
+	           		<m:MaterialLabel text="{lang.markerTip}"/>
+	           </bh:Div>
+	           <bh:Div ui:field="map" addStyleNames="round-corners {style.mapContainer}"/>
+           </bh:Div>
+           <m:MaterialTextBox textColor="BLACK" ui:field="altitudeBox" label="{lang.altitudeAboveGround} (m) *"/>
+           <m:MaterialTextBox textColor="BLACK" ui:field="directionVerticalBox" label="{lang.directionVertical} (°) *"/>
+           <m:MaterialTextBox textColor="BLACK" ui:field="directionHorizontalBox" label="{lang.directionHorizontal} (°) *"/>
+           <m:MaterialTextBox textColor="BLACK" ui:field="sensorModelBox" label="{lang.sensorModel} *"/>
+           <m:MaterialTextBox textColor="BLACK" ui:field="accuracyBox" label="{lang.accuracy} (0-10) *"/>
+           <m:MaterialTextBox textColor="BLACK" ui:field="attributionTextBox" label="{lang.attributionText} *"/>
+           <m:MaterialTextBox textColor="BLACK" ui:field="attributionUrlBox" label="{lang.attributionURL} *"/>
+  	   	   <g:FormPanel ui:field="uploadForm" addStyleNames="{style.center}">
+  	   	   		<bh:Div addStyleNames="flex-center">
+  	   	   		<bh:Div addStyleNames="position-relative">
+  	   	   				<bh:Div ui:field="infoContainer" addStyleNames="upload-info-container round-corners">
+	   	   					<bh:Span text="{lang.uploadInfo}"/>
+	   	   				</bh:Div>
+	   					<m:MaterialImage ui:field="infoIcon" height="20px" width="20px" url="{gui.info.getSafeUri.asString}" addStyleNames="margin-right-5"/>
+       				</bh:Div>
+  	   	   			<g:FileUpload ui:field="fileUpload" name="filename"/>
+  	   	   		</bh:Div>
+   	   		</g:FormPanel>
+       </m:MaterialModalContent>
+       <m:MaterialModalFooter>
+           <m:MaterialButton ui:field="confirmButton" enabled="false" text="{lang.confirm}" addStyleNames="d-btn"/>
+           <m:MaterialButton ui:field="closeButton" text="{lang.cancel}" addStyleNames="d-btn margin-right-10-important"/>
+       </m:MaterialModalFooter>
+   </m:MaterialModal>
+
+</ui:UiBinder>
