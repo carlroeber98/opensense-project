@@ -46,9 +46,6 @@ Das Projekt läuft mit Java 8 und funktioniert am besten mit der jdk1.8.0_191 (G
 ![Search page](assets/search.PNG)
 ![Visualization page](assets/vis.PNG)
 
-<video width="320" height="240" controls>
-  <source src="assets/demo.mp4" type="video/mp4">
-</video>
-
+![Demo video](assets/demo.mp4)
 
 
